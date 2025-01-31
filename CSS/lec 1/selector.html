@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYpes Of Selector</title>
+    <style>
+        /* Universal selector:- common style to apply on whole page */
+        *{            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         /* Tag/element Selector*/
+         h1{
+            background-color: antiquewhite;
+         }
+
+         /* Class selector: .classname */
+        .first-heading{
+            color: yellow;
+        }
+
+        .second-heading{
+            color: red;
+        }
+
+        .heading{
+            color: green;
+        }
+
+        /* id selector */
+        #first,#second{                 /* grouping selector */   
+            background-color: yellow;
+        }
+        #third{
+            background-color: aqua;
+        }
+
+        /* pseudo selector */
+        button:hover{
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 7px;
+            border-style: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- yellow-->
+     <h1 style="color: red;" class="first-heading">first heading</h1>  <!-- Tag/element Selector -->
+    <!-- red-->
+    <h1 class="second-heading">Second heading</h1> <hr>
+
+    <!-- color green for multiple class -->
+     <h2 class="heading">Heading</h2>
+     <h3 class="heading">Heading</h3><hr>
+
+     <!-- Colors -->
+      <!-- 1,2 background:- yellow ; 3 background:-aqua -->
+     <h1 class="heading" id="first">first heading</h1>
+     <h2 class="heading" id="second">Second heading</h2>
+     <h3 class="heading" id="third">Third Heading</h3> <hr>
+
+     <!-- Pseudo selector -->
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Submit</button>
+</body>
+</html>
