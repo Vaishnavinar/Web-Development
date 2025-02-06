@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Document</title>
+</head>
+<body>
+    <!-- 3 types of list
+     1.Ordered list
+     2.Unordered list
+     3.discription list -->
+
+     <!-- ordered list-->
+      <h1>Ordered list</h1>
+      <ol>
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>C#</li>
+        <li>c</li>
+      </ol>
+
+      <hr>
+      <!-- Unordered list-->
+       <h1>Unordered list</h1>
+      <ul style="list-style:square ;">
+        <li>java</li>
+        <li>python</li>
+        <li>c++</li>
+        <li>C#</li>
+        <li>c</li>
+      </ul>
+
+      <hr>
+      <!--Discription list-->
+      <h1>Discription list</h1>
+      <dl>
+        <dt>Java:-</dt>
+        <dd>Backend language</dd>
+      </dl>
+
+      <dl>
+        <dt>HTML:-</dt>
+        <dd>Frontend language</dd>
+      </dl>
+
+      <dl>
+        <dt>MySQL:-</dt>
+        <dd>Database language</dd>
+      </dl>
+
+      <hr>
+      <h3>Nested List</h3>
+      <dl>
+        <dt>Java Fullstack</dt>
+        <ul>
+            <li>Frontend language</li>
+        </ul>
+        <ol>
+            <li>HTML</li>
+            <li>css</li>
+            <li>Js</li>
+            <ol>
+                <li>React</li>
+                <li>Angular</li>
+                <li>View Js</li>
+            </ol>
+        </ol>
+
+        <ul>
+            <li>Backend language</li>
+        </ul>
+        <ol>
+            <li>Java</li>
+
+        </ol>
+        <ul>
+            <li>Database Language</li>
+        </ul>
+
+        <ol>
+            <li>MySQL</li>
+            <li>Oracle</li>
+            <li>Postgressql</li>
+        </ol>
+
+      </dl>
+
+      <hr>
+      <h3>Formating tag</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Sit ipsam autem, nisi ab hic ratione optio. Voluptates rerum neque minima laboriosam aperiam.</b> Voluptate eius necessitatibus nulla. <strong>Cumque eveniet quia, accusamus quibusdam fugiat, unde natus laboriosam consequuntur ipsum ullam qui, in fugit ipsam commodi illum deserunt architecto soluta nobis necessitatibus enim atque repellat!</strong> Fuga, necessitatibus impedit. Eaque vero reiciendis, tenetur sit, perferendis odio, officiis praesentium cupiditate nobis consequatur fugiat dolor veniam laudantium mollitia exercitationem molestias quod non laboriosam expedita. Possimus deleniti, ratione facilis culpa repellendus accusantium ipsum nulla, atque fugiat, repellat laudantium voluptatem at officiis minus molestiae blanditiis veritatis perspiciatis! Atque!</p>
+
+      <hr>
+      <!-- del tag-->
+       <h3> Del tag</h3>
+       <p> ₹900 <del>₹1000</del> 10%off</p>
+
+       <hr>
+       <!-- Sub tag-->
+        <h3>Sub tag</h3>
+        <p>H<sub>2</sub>O</p>
+
+        <!-- Sup tag-->
+        <h4>Sup tag</h4>
+        <p>2<sup>2</sup>=4</p>
+
+        <!-- Italic tag-->
+        <h4>Italic tag</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i> <b> Quis nesciunt repellendus culpa facilis obcaecati cupiditate,</b></i> quisquam quas doloremque iure reprehenderit omnis illum expedita sit sequi eligendi explicabo sunt deleniti optio quibusdam doloribus voluptas et! Sunt beatae molestias sapiente nemo, dolores consequatur, nostrum obcaecati, a delectus quia reiciendis. Molestias, minus tempore.</p>
+
+        <hr>
+        <!-- Abbrevation tag-->
+         <h3>Abbrevation tag</h3>
+         <p> <abbr title="Hyper text markup language">HTML</abbr> is a Frontend language.It is used for creating a structure of webpages.</p>
+
+         <hr>
+         <h3>Mark tag</h3>
+         <p> <mark> Lorem ipsum </mark> dolor sit amet, consectetur adipisicing elit. Quam quis ducimus aliquam! Reprehenderit dolorum molestias suscipit, accusantium quis ipsam laboriosam nisi obcaecati neque voluptas deleniti perferendis accusamus assumenda. Odit reiciendis sapiente aliquid magnam quisquam maxime et minus, quasi delectus perspiciatis debitis veritatis perferendis similique? Maxime nesciunt nam doloribus ipsam facere?</p>
+
+         <hr>
+         <h3>Small tag</h3>
+         <p>Lorem ipsum dolor sit <small> amet consectetur adipisicing elit.</small> Suscipit, eligendi animi explicabo eius ad totam optio nostrum illum error voluptatum fugit officia voluptates in velit repellat sint deserunt reprehenderit amet.</p>
+
+         <hr>
+         <h3>Inserted tag</h3>
+         <p> <ins> Java</ins> is a programming language</p>
+
+         <hr>
+         <pre>
+         package Oops;
+
+import java.util.Scanner;
+
+class Arm
+{
+	static boolean checkArm(int n)
+	{
+		int sum=0,digit,temp=n;
+		while(n<1)
+		{
+			digit=n%10;
+			sum=sum+digit*digit*digit;
+			n=n/10;
+		}
+		if(sum==temp)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	static void printArmsno(int start,int end) 
+	{
+		for(int i=start;i<=end;i++)
+		{
+			if(checkArm(i)) {
+				System.out.println(i);
+				
+			}
+		}
+		
+}
+</pre>
+</body>
+</html>

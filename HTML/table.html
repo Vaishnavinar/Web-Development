@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table{
+            width: 80%;
+            margin: 100px auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+        .header{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+   <!-- <table border="1">
+        <caption>Employee Table</caption>
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>salary</th>
+            <th>age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Siddhi</td>
+                <td>20000</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shreyas</td>
+                <td>40000</td>
+                <td>22</td>
+            </tr>
+        </tbody>
+
+    </table>   -->
+
+    <!-- Colspan-->
+    <table>
+        <caption><h1>Colspan</h1></caption>
+        <thead>
+            <tr class="header">
+                <th>name</th>
+                <th>email</th>
+                <th colspan="2">contact</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>xyz</td>
+                <td>xyz@gmail.com</td>
+                <td>9078906587</td>
+                <td>7056907654</td>
+            </tr>
+
+            <tr>
+                <td>abc</td>
+                <td>abc@gmail.com</td>
+                <td>9078906587</td>
+                <td>9809657687</td>
+            </tr>
+
+            <tr>
+                <td>pqr</td>
+                <td>pqr@gmail.com</td>
+                <td>9078906587</td>
+                <td>7687094365</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Rowspan-->
+    <table>
+        <caption><h1>RowSpan</h1></caption>
+        <thead>
+            <tr class="header">
+                <th>name</th>
+                <th>email</th>
+                <th>contact</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">xyz</td>
+                <td rowspan="2">xyz@gmail.com</td>
+                <td>9078906587</td>
+            </tr>
+
+            <tr>
+                <td>9078906587</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
