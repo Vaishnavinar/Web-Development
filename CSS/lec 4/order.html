@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+           justify-content: space-around;
+           flex-wrap: wrap;
+        }
+
+        .first{
+            width: 500px;
+            background-color: red;
+            padding: 200px 0px;
+            order: 7;
+        }
+        .second{
+            width: 500px;
+            background-color: yellow;
+            padding: 200px 0px;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">first</div>
+        <div class="second">Second</div>
+    </div>
+</body>
+</html>

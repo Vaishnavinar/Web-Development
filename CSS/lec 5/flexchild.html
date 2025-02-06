@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexchild</title>
+    <style>
+        .container{
+            display: flex;
+            width: 100%;
+            /* justify-content: space-around;
+            flex-wrap: wrap; */
+            background-color: bisque;
+        }
+        .container div{
+            margin: 5px;
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        .third{
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">First</div>
+        <div class="second">Second</div>
+        <div class="third">third</div>
+        <div class="fourth">fourth</div> 
+        <div class="fifth">fifth</div>
+
+    </div>
+</body>
+</html>

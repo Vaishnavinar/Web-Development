@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            width: 150px;
+            background-color: bisque;
+            animation-name: move-div;
+            position: relative;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+
+            animation-delay: 2s;
+        }
+
+        .img-container {
+            height: 100vh;
+            width: 100%;
+            background-color: bisque;
+            display: flex;
+            /* position: fixed; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            position: relative;
+            animation-name: img-move;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+
+        }
+
+        @keyframes move-div {
+            /* single line  */
+            /* from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 800px; background-color: pink;
+            } */
+
+
+            /* rectangle making */
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 1100px; 
+                background-color: pink;
+            }
+            50%{
+                top: 600px;
+                left: 1100px;
+            }
+            75%{
+                top: 600px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+
+        }
+
+        /* @keyframes img-move {
+
+            img move
+            0% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(-10px);
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div>CSS Animation</div>
+    <!-- <div class="img-container">
+        <img src="HERO.svg" alt="" width="400px">
+    </div> -->
+</body>
+
+</html>

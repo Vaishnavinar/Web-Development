@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(73, 73, 120);
+            padding: 10px 0px;
+            position: fixed;
+            top: 0;
+        }
+        .first-nav-section{
+            width: 20%;
+            
+        }
+        .second-nav-section{
+            width: 60%;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline 2px solid white;
+            font-size: 18px;
+        }
+        h1{
+            color: white;
+            font-size: 30px;
+            
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+            background-color:  rgb(73, 73, 120);
+            color: white;
+            /* position: fixed;
+            bottom: 0; */
+            padding: 12px 0px;
+        }
+        img{
+            max-width: 99%;
+            min-width:99%;
+            max-height: 120px;
+            min-height: 120px;
+            border-radius: 6px;
+           
+
+        }
+        img:hover{
+            opacity: 0.6;
+        }
+        .card{
+            width: 200px;
+            margin: 10px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 6px;
+        }
+       
+        body{
+            background-color:gray;
+        }
+        button{
+            width: 100%;
+            margin-top: 5px;
+            color: white;
+            font-size: 14px;
+            font-weight: 900;
+            border: 1px solid white;
+            border-radius: 3px;
+            padding: 3px 0px;
+        }
+        .cart{
+            background-color: rgb(247, 183, 62);
+            
+        }
+        .buy{
+            background-color: rgb(214, 94, 50);
+        }
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 75px;
+        }
+        @media screen and (max-width:550px){
+            nav{
+                flex-direction: column;
+            }
+            .first-nav-section{
+                width: 100%;
+                text-align: center;
+            }
+            .second-nav-section{
+                width: 100%;
+                margin-top: 8px;
+            }
+        }
+        @media screen and (max-width:350px) {
+            .card{
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="first-nav-section">
+                <h1>Quastech</h1>
+            </div>
+            <div class="second-nav-section">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Service</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="ingmar-h-QNb02C_HyxQ-unsplash.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="img.jpeg" alt="">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="card-footer">
+                    <button class="cart">Add Cart</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <footer>
+        © 2018 QUASTECH. All rights reserved
+    </footer>
+</body>
+</html>
